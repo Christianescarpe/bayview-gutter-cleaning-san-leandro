@@ -1,0 +1,52 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/cache
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local environment variables
+.env*.local
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Temporary scripts and data dumps
+sheet.xlsx
+sheet.zip
+unpacked_sheet/
+gmap_dump.html
+find_phone.js
+inspect_gmap.js
+test_routes.js
+audit_urls.js
+check_map.js
+optimize_hero_bg.js
+inspect_contact.js
+inspect_contact_intro.js
+read_sheet.js
+list_pages.js
+parse_sheets.js
+analyze_content.js

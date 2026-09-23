@@ -1,16 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { CheckCircle2, ArrowRight, Shield, Award } from 'lucide-react';
+import { COMPANY_CONFIG } from '@/data/companyConfig';
+import { CheckCircle2, Phone, PhoneCall } from 'lucide-react';
 
 interface ImageCollageSectionProps {
   badge?: string;
   title: string;
   descriptionHtml: string;
   checkmarks: string[];
+  images: string[];
   ctaText?: string;
   ctaLink?: string;
-  images: string[];
 }
 
 export default function ImageCollageSection({
@@ -18,8 +18,6 @@ export default function ImageCollageSection({
   title,
   descriptionHtml,
   checkmarks,
-  ctaText = 'Book Service Appointment',
-  ctaLink = '/contact',
   images,
 }: ImageCollageSectionProps) {
   const mainImage = images[0] || '/images/gutter-cleaning/man-working-on-gutter-wearing-gloves-and-cap.webp';
@@ -109,15 +107,15 @@ export default function ImageCollageSection({
               </div>
             )}
 
-            {/* CTA Button */}
+            {/* Phone Only CTA Button */}
             <div className="pt-4">
-              <Link
-                href={ctaLink}
-                className="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue-hover text-white font-bold px-7 py-3.5 rounded-full shadow-lg shadow-brand-blue/20 hover:shadow-brand-blue/35 hover:scale-[1.02] active:scale-[0.98] transition-all"
+              <a
+                href={COMPANY_CONFIG.phoneTel}
+                className="inline-flex items-center gap-3 bg-brand-blue hover:bg-brand-blue-hover text-white font-bold px-8 py-4 rounded-full shadow-lg shadow-brand-blue/20 hover:shadow-brand-blue/35 hover:scale-[1.02] active:scale-[0.98] transition-all"
               >
-                <span>{ctaText}</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+                <Phone className="w-4 h-4 text-white" />
+                <span>Call to Schedule: {COMPANY_CONFIG.phone}</span>
+              </a>
             </div>
 
           </div>

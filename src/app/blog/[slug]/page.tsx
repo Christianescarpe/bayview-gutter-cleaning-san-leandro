@@ -4,11 +4,12 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { blogPosts, getBlogPostBySlug } from '@/data/blogContent';
+import { COMPANY_CONFIG } from '@/data/companyConfig';
 import HeroSection from '@/components/HeroSection';
 import TrustBar from '@/components/TrustBar';
 import CtaBanner from '@/components/CtaBanner';
 import ContentRenderer from '@/components/ContentRenderer';
-import { ArrowLeft, ArrowRight, BookOpen, CheckCircle, ShieldCheck } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BookOpen, CheckCircle, ShieldCheck, PhoneCall } from 'lucide-react';
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -49,8 +50,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         subheadline={post.introHtml || post.metaDescription}
         heroImage="/images/gutter-cleaning/man-cleans-leaves-from-gutters-in-autumn.webp"
         imageAlt={post.title}
-        primaryCtaText="Request Free Quote"
-        primaryCtaLink="/contact"
+        primaryCtaText={`Call ${COMPANY_CONFIG.phone}`}
+        primaryCtaLink={COMPANY_CONFIG.phoneTel}
         secondaryCtaText="All Blog Guides"
         secondaryCtaLink="/blog"
         defaultService="Gutter Cleaning"
@@ -97,12 +98,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </div>
             </div>
 
-            <Link
-              href="/contact"
-              className="bg-brand-blue hover:bg-brand-blue-hover text-white text-xs sm:text-sm font-bold px-6 py-3 rounded-full shadow-md transition-all"
+            <a
+              href={COMPANY_CONFIG.phoneTel}
+              className="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue-hover text-white text-xs sm:text-sm font-bold px-6 py-3 rounded-full shadow-md transition-all hover:scale-[1.02] active:scale-[0.98]"
             >
-              Get a Free Estimate
-            </Link>
+              <PhoneCall className="w-4 h-4" />
+              <span>Call: {COMPANY_CONFIG.phone}</span>
+            </a>
           </div>
 
         </div>
@@ -111,11 +113,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       {/* Pre-footer CTA */}
       <CtaBanner
         title="Need Hands-On Help With Your Gutters?"
-        description="Don't risk ladder falls or water overflow. Let our trained and insured crews take care of your gutters safely."
-        primaryText="Schedule Service"
-        primaryLink="/contact"
-        secondaryText="View Gutter Services"
-        secondaryLink="/gutter-cleaning"
+        description="Don't risk ladder falls or water overflow. Call our trained and insured local crews for an immediate phone estimate."
         imageSrc="/images/gutter-cleaning/male-technician-in-blue-uniform-climbing-ladder-on.webp"
       />
     </div>

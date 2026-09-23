@@ -298,7 +298,7 @@ export default function Navbar() {
             </div>
 
             {/* Prominent Call Us Button in Mobile Drawer */}
-            <div className="pt-4 space-y-2">
+            <div className="pt-4">
               <a
                 href={COMPANY_CONFIG.phoneTel}
                 className="w-full flex items-center justify-center gap-2 bg-brand-blue text-white py-3.5 rounded-xl font-bold text-sm shadow-lg shadow-brand-blue/30"
@@ -306,13 +306,6 @@ export default function Navbar() {
                 <Phone className="w-4 h-4" />
                 <span>Call Us Now: {COMPANY_CONFIG.phone}</span>
               </a>
-
-              <Link
-                href="/contact"
-                className="w-full block text-center bg-white/10 hover:bg-white/15 text-white py-2.5 rounded-xl font-medium text-xs border border-white/10"
-              >
-                Request Free Online Quote
-              </Link>
             </div>
           </div>
         </div>

@@ -37,12 +37,12 @@ export default function Footer() {
             <div className="space-y-3 pt-2 text-sm text-slate-300">
               <a
                 href={COMPANY_CONFIG.phoneTel}
-                className="flex items-center gap-3 text-white font-bold hover:text-blue-400 transition-colors group"
+                className="flex items-center gap-3 text-white font-black text-lg hover:text-blue-400 transition-colors group"
               >
-                <div className="w-8 h-8 rounded-full bg-brand-blue/20 text-brand-blue group-hover:bg-brand-blue group-hover:text-white flex items-center justify-center transition-colors">
+                <div className="w-9 h-9 rounded-full bg-brand-blue text-white flex items-center justify-center transition-transform group-hover:scale-110 shadow-md">
                   <Phone className="w-4 h-4" />
                 </div>
-                <span className="text-base">Direct: {COMPANY_CONFIG.phone}</span>
+                <span>{COMPANY_CONFIG.phone}</span>
               </a>
 
               <div className="flex items-start gap-3">
@@ -59,21 +59,14 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center gap-3 pt-2">
+            <div className="pt-2">
               <a
                 href={COMPANY_CONFIG.phoneTel}
-                className="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue-hover text-white text-sm font-bold px-5 py-2.5 rounded-full shadow-lg shadow-brand-blue/20 transition-all"
+                className="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue-hover text-white text-sm font-bold px-6 py-3 rounded-full shadow-lg shadow-brand-blue/20 transition-all hover:scale-[1.02]"
               >
                 <Phone className="w-4 h-4" />
-                <span>Call {COMPANY_CONFIG.phone}</span>
+                <span>Call to Schedule: {COMPANY_CONFIG.phone}</span>
               </a>
-
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 text-white text-sm font-medium px-4 py-2.5 rounded-full border border-white/10 transition-all"
-              >
-                <span>Online Quote</span>
-              </Link>
             </div>
           </div>
 
@@ -141,7 +134,7 @@ export default function Footer() {
                 Our Location
               </h3>
               <a
-                href="https://maps.app.goo.gl/w1PB7fvwjkCy7mZZ7"
+                href={COMPANY_CONFIG.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs text-blue-400 hover:text-blue-300 inline-flex items-center gap-1 font-medium"

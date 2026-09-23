@@ -1,200 +1,72 @@
 'use client';
 
-import React, { useState } from 'react';
-import { CheckCircle2, Send, ShieldCheck, ArrowRight } from 'lucide-react';
-import { services, locations } from '@/data/siteContent';
+import React from 'react';
+import { COMPANY_CONFIG } from '@/data/companyConfig';
+import { Phone, PhoneCall, ShieldCheck, CheckCircle2, Clock, Calendar, MapPin } from 'lucide-react';
 
 export default function ContactFormSection() {
-  const [submitted, setSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    phone: '',
-    address: '',
-    service: 'Gutter Cleaning',
-    stories: 'Single Story',
-    lastCleaned: 'Over 1 Year Ago',
-    notes: '',
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.fullName || (!formData.email && !formData.phone)) return;
-    setSubmitted(true);
-  };
-
   return (
-    <div className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-xl">
-      {submitted ? (
-        <div className="text-center py-12 space-y-4">
-          <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto">
-            <CheckCircle2 className="w-10 h-10" />
-          </div>
-          <h3 className="text-2xl font-bold text-slate-900">
-            Quote Request Received!
-          </h3>
-          <p className="text-slate-600 max-w-md mx-auto text-sm leading-relaxed">
-            Thank you, {formData.fullName}. Our San Leandro office will review your address and property details and reply within one business day with a firm estimate.
-          </p>
-          <div className="pt-4">
-            <button
-              onClick={() => setSubmitted(false)}
-              className="text-sm font-semibold text-brand-blue hover:underline"
-            >
-              Submit another request
-            </button>
-          </div>
+    <div className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-xl space-y-8">
+      <div>
+        <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-blue bg-blue-50 px-3 py-1 rounded-full border border-blue-200/60 mb-3">
+          <span className="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
+          <span>Fast Phone Scheduling</span>
         </div>
-      ) : (
-        <div>
-          <div className="mb-6">
-            <h3 className="text-2xl font-black text-slate-900 tracking-tight">
-              Request Your Free, No-Obligation Quote
-            </h3>
-            <p className="text-slate-500 text-xs sm:text-sm mt-1">
-              Provide your address and home details so we can give you an accurate quote before we even arrive.
-            </p>
-          </div>
+        <h3 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+          Call or Text Our San Leandro Office
+        </h3>
+        <p className="text-slate-600 text-sm sm:text-base mt-2 leading-relaxed">
+          We have streamlined our booking process to save you time. Simply call or text our local team with your address and home details for an instant quote and same-week booking.
+        </p>
+      </div>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                  Full Name *
-                </label>
-                <input
-                  type="text"
-                  required
-                  placeholder="e.g. Robert Smith"
-                  value={formData.fullName}
-                  onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/70 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue/40 focus:bg-white"
-                />
-              </div>
-
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                  Phone Number *
-                </label>
-                <input
-                  type="tel"
-                  required
-                  placeholder="(510) 000-0000"
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/70 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue/40 focus:bg-white"
-                />
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  placeholder="name@example.com"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/70 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue/40 focus:bg-white"
-                />
-              </div>
-
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                  Street Address & City *
-                </label>
-                <input
-                  type="text"
-                  required
-                  placeholder="e.g. 1234 Estudillo Ave, San Leandro"
-                  value={formData.address}
-                  onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/70 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue/40 focus:bg-white"
-                />
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                  Service Needed
-                </label>
-                <select
-                  value={formData.service}
-                  onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/70 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue/40 focus:bg-white"
-                >
-                  {services.map((s) => (
-                    <option key={s.url} value={s.title}>
-                      {s.title}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                  Stories on Home
-                </label>
-                <select
-                  value={formData.stories}
-                  onChange={(e) => setFormData({ ...formData, stories: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/70 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue/40 focus:bg-white"
-                >
-                  <option value="Single Story">Single Story</option>
-                  <option value="Two Story">Two Story</option>
-                  <option value="Three+ Story / Split Level">Three+ Story / Split Level</option>
-                  <option value="Commercial Building">Commercial Building</option>
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                  Last Cleaned
-                </label>
-                <select
-                  value={formData.lastCleaned}
-                  onChange={(e) => setFormData({ ...formData, lastCleaned: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/70 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue/40 focus:bg-white"
-                >
-                  <option value="Within 6 Months">Within 6 Months</option>
-                  <option value="6-12 Months Ago">6-12 Months Ago</option>
-                  <option value="Over 1 Year Ago">Over 1 Year Ago</option>
-                  <option value="Never / Unknown">Never / Unknown</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                Special Notes or Problem Areas
-              </label>
-              <textarea
-                rows={3}
-                placeholder="Mention specific concerns, e.g. overflowing downspout, steep roof, pine trees overhead..."
-                value={formData.notes}
-                onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/70 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue/40 focus:bg-white"
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-brand-blue hover:bg-brand-blue-hover text-white py-4 rounded-xl font-bold text-base shadow-xl shadow-brand-blue/25 hover:shadow-brand-blue/40 flex items-center justify-center gap-2 transition-all hover:scale-[1.01] active:scale-[0.99]"
-            >
-              <span>Submit Free Quote Request</span>
-              <ArrowRight className="w-5 h-5" />
-            </button>
-
-            <div className="flex items-center justify-center gap-2 text-xs text-slate-500 pt-2">
-              <ShieldCheck className="w-4 h-4 text-brand-blue" />
-              <span>Your privacy is protected. We do not sell or share contact details.</span>
-            </div>
-          </form>
+      {/* Hero Phone Dial Block */}
+      <div className="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 space-y-4 shadow-lg border border-slate-800">
+        <div className="text-xs uppercase tracking-wider font-extrabold text-blue-400">
+          Direct Line & Customer Service
         </div>
-      )}
+        <div className="text-2xl sm:text-4xl font-black tracking-tight text-white">
+          {COMPANY_CONFIG.phone}
+        </div>
+        <p className="text-xs text-slate-400">
+          Available Monday through Saturday during standard business hours. Active storm overflows are given priority dispatch.
+        </p>
+        <div className="pt-2">
+          <a
+            href={COMPANY_CONFIG.phoneTel}
+            className="w-full inline-flex items-center justify-center gap-3 bg-brand-blue hover:bg-brand-blue-hover text-white text-base sm:text-lg font-black py-4 px-8 rounded-xl shadow-lg shadow-brand-blue/30 hover:shadow-brand-blue/50 transition-all hover:scale-[1.01] active:scale-[0.99]"
+          >
+            <PhoneCall className="w-5 h-5 text-white" />
+            <span>Tap to Call: {COMPANY_CONFIG.phone}</span>
+          </a>
+        </div>
+      </div>
+
+      {/* What to provide when calling */}
+      <div className="space-y-3 pt-2">
+        <h4 className="text-sm font-bold uppercase tracking-wider text-slate-900">
+          What to Share When You Call:
+        </h4>
+        <ul className="space-y-2.5 text-sm text-slate-600">
+          <li className="flex items-start gap-2.5">
+            <CheckCircle2 className="w-4 h-4 text-brand-blue shrink-0 mt-0.5" />
+            <span><strong>Your Street Address:</strong> Confirms your home is within our San Leandro & East Bay coverage area.</span>
+          </li>
+          <li className="flex items-start gap-2.5">
+            <CheckCircle2 className="w-4 h-4 text-brand-blue shrink-0 mt-0.5" />
+            <span><strong>Home Stories & Tree Cover:</strong> Single-story, two-story, or proximity to eucalyptus, pines, or oaks.</span>
+          </li>
+          <li className="flex items-start gap-2.5">
+            <CheckCircle2 className="w-4 h-4 text-brand-blue shrink-0 mt-0.5" />
+            <span><strong>Preferred Appointment Window:</strong> We offer convenient morning and afternoon time slots.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div className="pt-4 border-t border-slate-100 flex items-center gap-2 text-xs text-slate-500">
+        <ShieldCheck className="w-4 h-4 text-brand-blue" />
+        <span>No pushy sales. Upfront, transparent pricing provided before any work starts.</span>
+      </div>
     </div>
   );
 }

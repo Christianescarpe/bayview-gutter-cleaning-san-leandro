@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getPageBySlug } from '@/data/siteContent';
+import { COMPANY_CONFIG } from '@/data/companyConfig';
 import HeroSection from '@/components/HeroSection';
 import TrustBar from '@/components/TrustBar';
 import CtaBanner from '@/components/CtaBanner';
@@ -18,7 +19,6 @@ export const metadata: Metadata = {
 };
 
 export default function FaqPage() {
-  // Extract questions (all H2 sections)
   const faqSections = faqPageData.sections;
 
   return (
@@ -31,10 +31,6 @@ export default function FaqPage() {
         subheadline={faqPageData.introHtml}
         heroImage={images.heroInspection}
         imageAlt="Gutter inspection and FAQ Bayview Gutter Cleaning San Leandro"
-        primaryCtaText="Ask a Question"
-        primaryCtaLink="/contact"
-        secondaryCtaText="Explore Services"
-        secondaryCtaLink="/gutter-cleaning"
         defaultService="Gutter Inspection"
         defaultLocation="San Leandro"
       />
@@ -65,11 +61,7 @@ export default function FaqPage() {
       {/* Pre-footer CTA */}
       <CtaBanner
         title="Still Have Questions About Your Roofline?"
-        description="Browse our full gutter cleaning and repair services or contact our team directly for honest guidance specific to your home."
-        primaryText="Contact Our Office"
-        primaryLink="/contact"
-        secondaryText="View Gutter Services"
-        secondaryLink="/gutter-cleaning"
+        description="Call our San Leandro office directly for honest, friendly guidance and immediate phone scheduling."
         imageSrc="/images/gutter-cleaning/male-technician-in-blue-uniform-climbing-ladder-on.webp"
       />
     </div>

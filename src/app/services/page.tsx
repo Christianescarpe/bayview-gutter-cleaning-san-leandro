@@ -3,13 +3,14 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { services } from '@/data/siteContent';
+import { COMPANY_CONFIG } from '@/data/companyConfig';
 import HeroSection from '@/components/HeroSection';
 import TrustBar from '@/components/TrustBar';
 import PackageCardsSection from '@/components/PackageCardsSection';
 import TestimonialsTrustSection from '@/components/TestimonialsTrustSection';
 import CtaBanner from '@/components/CtaBanner';
 import { images } from '@/data/imageMap';
-import { ArrowRight, CheckCircle2, Droplets, ShieldCheck } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Droplets, ShieldCheck, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Gutter Cleaning & Repair Services San Leandro CA | Bayview',
@@ -27,10 +28,6 @@ export default function ServicesHubPage() {
         subheadline="From single-family homes near the San Leandro Marina to multi-story commercial buildings, Bayview Gutter Cleaning provides ladder-safe, insured, and thorough gutter care across the East Bay."
         heroImage={images.heroHome}
         imageAlt="Bayview Gutter Cleaning San Leandro service catalog"
-        primaryCtaText="Get Free Quote"
-        primaryCtaLink="/contact"
-        secondaryCtaText="View Service Areas"
-        secondaryCtaLink="/areas-we-serve"
         defaultService="Gutter Cleaning"
         defaultLocation="San Leandro"
       />
@@ -77,21 +74,22 @@ export default function ServicesHubPage() {
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-slate-200/60 flex items-center justify-between">
+                <div className="pt-4 border-t border-slate-200/60 flex items-center justify-between gap-2">
                   <Link
                     href={service.url}
                     className="inline-flex items-center gap-1.5 text-sm font-bold text-brand-blue group-hover:translate-x-1 transition-transform"
                   >
-                    <span>Learn More</span>
+                    <span>Details</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
 
-                  <Link
-                    href="/contact"
-                    className="text-xs font-semibold text-slate-400 hover:text-slate-900"
+                  <a
+                    href={COMPANY_CONFIG.phoneTel}
+                    className="inline-flex items-center gap-1 text-xs font-bold text-slate-700 hover:text-brand-blue bg-white border border-slate-200 px-3 py-1.5 rounded-full transition-colors"
                   >
-                    Free Quote &rarr;
-                  </Link>
+                    <Phone className="w-3 h-3 text-brand-blue" />
+                    <span>Call to Book</span>
+                  </a>
                 </div>
               </div>
             ))}
@@ -112,12 +110,8 @@ export default function ServicesHubPage() {
 
       {/* Pre-footer CTA */}
       <CtaBanner
-        title="Get Your Free Gutter Cleaning Quote in San Leandro"
+        title="Call for Your Free Gutter Cleaning Quote in San Leandro"
         description="Schedule a fast, friendly gutter cleaning visit with our insured local crew today."
-        primaryText="Request Free Quote"
-        primaryLink="/contact"
-        secondaryText="View FAQ"
-        secondaryLink="/faq"
         imageSrc="/images/gutter-cleaning/man-cleaning-gutters-with-vacuum-and-safety-gloves.webp"
       />
     </div>

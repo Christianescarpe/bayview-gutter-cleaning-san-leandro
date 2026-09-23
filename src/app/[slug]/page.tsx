@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { sitePages, getPageBySlug, services, locations } from '@/data/siteContent';
+import { COMPANY_CONFIG } from '@/data/companyConfig';
 import HeroSection from '@/components/HeroSection';
 import TrustBar from '@/components/TrustBar';
 import ImageCollageSection from '@/components/ImageCollageSection';
@@ -21,6 +22,7 @@ import {
   ArrowRight,
   Droplet,
   Check,
+  Phone,
 } from 'lucide-react';
 
 interface PageProps {
@@ -58,10 +60,8 @@ export default async function GenericContentPage({ params }: PageProps) {
   const isLocation = page.type === 'location' || page.type === 'location-hub';
   const heroImg = getHeroImageForSlug(page.slug);
 
-  // Collage images selection
   const collageImgs = isLocation ? images.collageLocation : images.collageService;
 
-  // Split sections for page layout
   const firstSection = page.sections[0];
   const secondSection = page.sections[1];
   const middleSections = page.sections.slice(2, -1);
@@ -69,7 +69,7 @@ export default async function GenericContentPage({ params }: PageProps) {
 
   return (
     <div>
-      {/* 1. HERO SECTION (Dark theme with Floating Quote Card & Trust Bar) */}
+      {/* 1. HERO SECTION (Dark theme with Floating Phone Card & Trust Bar) */}
       <HeroSection
         badgeText={
           isLocation
@@ -80,10 +80,6 @@ export default async function GenericContentPage({ params }: PageProps) {
         subheadline={page.introHtml || page.metaDescription}
         heroImage={heroImg}
         imageAlt={`${page.title} - Bayview Gutter Cleaning San Leandro`}
-        primaryCtaText="Get Free Quote"
-        primaryCtaLink="/contact"
-        secondaryCtaText={isLocation ? 'View Services' : 'Our Service Areas'}
-        secondaryCtaLink={isLocation ? '/gutter-cleaning' : '/areas-we-serve'}
         defaultService={isLocation ? 'Gutter Cleaning' : page.title}
         defaultLocation={isLocation ? page.title : 'San Leandro'}
       />
@@ -110,8 +106,6 @@ export default async function GenericContentPage({ params }: PageProps) {
                   '100% full debris haul-away from property',
                 ]
           }
-          ctaText="Schedule Your Service"
-          ctaLink="/contact"
           images={collageImgs}
         />
       )}
@@ -145,13 +139,13 @@ export default async function GenericContentPage({ params }: PageProps) {
                 />
 
                 <div className="pt-2">
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue-hover text-white font-bold text-sm px-6 py-3 rounded-full shadow-lg shadow-brand-blue/30 transition-all"
+                  <a
+                    href={COMPANY_CONFIG.phoneTel}
+                    className="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue-hover text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-full shadow-lg shadow-brand-blue/30 transition-all hover:scale-[1.02]"
                   >
-                    <span>Request Free Estimate</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
+                    <Phone className="w-4 h-4" />
+                    <span>Call to Book: {COMPANY_CONFIG.phone}</span>
+                  </a>
                 </div>
               </div>
 
@@ -227,6 +221,15 @@ export default async function GenericContentPage({ params }: PageProps) {
                     className="sheet-prose text-slate-600"
                     dangerouslySetInnerHTML={{ __html: sec.content }}
                   />
+                  <div className="pt-2">
+                    <a
+                      href={COMPANY_CONFIG.phoneTel}
+                      className="inline-flex items-center gap-2 text-brand-blue font-bold text-sm hover:underline"
+                    >
+                      <Phone className="w-3.5 h-3.5" />
+                      <span>Call for service: {COMPANY_CONFIG.phone}</span>
+                    </a>
+                  </div>
                 </div>
 
                 <div className={`lg:col-span-5 ${idx % 2 === 1 ? 'lg:order-1' : ''}`}>
@@ -258,11 +261,7 @@ export default async function GenericContentPage({ params }: PageProps) {
       {/* 7. VIBRANT BLUE PRE-FOOTER CTA BANNER */}
       <CtaBanner
         title={lastSection ? lastSection.title : `Ready to Clear Your Gutters in ${page.title}?`}
-        description="Don't wait for the next storm to discover a clogged gutter. Contact Bayview Gutter Cleaning San Leandro today for a prompt, free estimate."
-        primaryText="Get Your Free Quote"
-        primaryLink="/contact"
-        secondaryText="View FAQ"
-        secondaryLink="/faq"
+        description="Don't wait for the next storm to discover a clogged gutter. Call Bayview Gutter Cleaning San Leandro today for prompt, same-week phone scheduling."
         imageSrc="/images/gutter-cleaning/male-technician-in-blue-uniform-climbing-ladder-on.webp"
       />
     </div>

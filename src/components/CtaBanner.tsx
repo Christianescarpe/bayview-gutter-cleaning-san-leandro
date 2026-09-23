@@ -1,26 +1,21 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { COMPANY_CONFIG } from '@/data/companyConfig';
-import { ArrowRight, PhoneCall, Calendar, Phone } from 'lucide-react';
+import { PhoneCall, Phone } from 'lucide-react';
 
 interface CtaBannerProps {
   title?: string;
   description?: string;
+  imageSrc?: string;
   primaryText?: string;
   primaryLink?: string;
   secondaryText?: string;
   secondaryLink?: string;
-  imageSrc?: string;
 }
 
 export default function CtaBanner({
   title = 'Where Clean Gutters Meet Total Protection',
-  description = 'Stop worrying about clogged gutters before the next storm rolls in. Contact Bayview Gutter Cleaning San Leandro today for a free, no-obligation estimate.',
-  primaryText = 'Book Appointment',
-  primaryLink = '/contact',
-  secondaryText = 'View FAQ',
-  secondaryLink = '/faq',
+  description = 'Stop worrying about clogged gutters before the next storm rolls in. Call Bayview Gutter Cleaning San Leandro today for an instant phone estimate and same-week scheduling.',
   imageSrc = '/images/gutter-cleaning/man-cleaning-gutters-with-vacuum-and-safety-gloves.webp',
 }: CtaBannerProps) {
   return (
@@ -33,7 +28,7 @@ export default function CtaBanner({
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center relative z-10">
             
-            {/* Left Column: Heading & CTAs (7 cols) */}
+            {/* Left Column: Heading & Pure Phone CTAs (7 cols) */}
             <div className="lg:col-span-7 space-y-6 text-white">
               <div className="flex flex-wrap items-center gap-3">
                 <span className="inline-block text-xs font-extrabold uppercase tracking-widest bg-white/20 backdrop-blur-md px-3.5 py-1 rounded-full text-white">
@@ -56,19 +51,19 @@ export default function CtaBanner({
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <a
                   href={COMPANY_CONFIG.phoneTel}
-                  className="inline-flex items-center gap-2 bg-white hover:bg-slate-100 text-brand-blue font-bold px-7 py-3.5 rounded-full shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all"
+                  className="inline-flex items-center gap-2.5 bg-white hover:bg-slate-100 text-brand-blue font-black px-8 py-4 rounded-full shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all text-base"
                 >
-                  <PhoneCall className="w-4 h-4 text-brand-blue" />
+                  <PhoneCall className="w-5 h-5 text-brand-blue" />
                   <span>Call {COMPANY_CONFIG.phone}</span>
                 </a>
 
-                <Link
-                  href={primaryLink}
-                  className="inline-flex items-center gap-2 bg-blue-700/60 hover:bg-blue-700 text-white font-semibold px-6 py-3.5 rounded-full border border-white/20 backdrop-blur-sm hover:scale-[1.02] active:scale-[0.98] transition-all"
+                <a
+                  href={COMPANY_CONFIG.phoneTel}
+                  className="inline-flex items-center gap-2 bg-blue-700/60 hover:bg-blue-700 text-white font-semibold px-6 py-4 rounded-full border border-white/20 backdrop-blur-sm hover:scale-[1.02] active:scale-[0.98] transition-all text-sm"
                 >
-                  <Calendar className="w-4 h-4" />
-                  <span>{primaryText}</span>
-                </Link>
+                  <Phone className="w-4 h-4" />
+                  <span>Call for Instant Quote</span>
+                </a>
               </div>
             </div>
 

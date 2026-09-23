@@ -1,9 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import FloatingQuoteForm from './FloatingQuoteForm';
 import { COMPANY_CONFIG } from '@/data/companyConfig';
-import { ArrowRight, CheckCircle2, Droplet, ShieldCheck, Phone } from 'lucide-react';
+import { ShieldCheck, Phone, PhoneCall } from 'lucide-react';
 
 interface HeroSectionProps {
   badgeText?: string;
@@ -27,10 +26,6 @@ export default function HeroSection({
   subheadline,
   heroImage,
   imageAlt = 'Bayview Gutter Cleaning San Leandro technicians on site',
-  primaryCtaText = 'Get Free Quote',
-  primaryCtaLink = '/contact',
-  secondaryCtaText = 'Explore Services',
-  secondaryCtaLink = '/gutter-cleaning',
   defaultService = 'Gutter Cleaning',
   defaultLocation = 'San Leandro',
 }: HeroSectionProps) {
@@ -89,7 +84,7 @@ export default function HeroSection({
               dangerouslySetInnerHTML={{ __html: subheadline }}
             />
 
-            {/* Action Buttons: Phone Direct Call Button */}
+            {/* Action Buttons: Pure Phone CTAs */}
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <a
                 href={COMPANY_CONFIG.phoneTel}
@@ -101,13 +96,13 @@ export default function HeroSection({
                 <span>Call {COMPANY_CONFIG.phone}</span>
               </a>
 
-              <Link
-                href={primaryCtaLink}
+              <a
+                href={COMPANY_CONFIG.phoneTel}
                 className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-sm sm:text-base px-6 py-3.5 rounded-full backdrop-blur-md hover:scale-[1.02] active:scale-[0.98] transition-all"
               >
-                <span>{primaryCtaText}</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+                <PhoneCall className="w-4 h-4 text-blue-300" />
+                <span>Call for Instant Quote</span>
+              </a>
             </div>
           </div>
 
@@ -149,7 +144,7 @@ export default function HeroSection({
 
         </div>
 
-        {/* Floating Quick Quote Card */}
+        {/* Floating Quick Phone Card */}
         <div className="relative z-20 -mb-8 sm:-mb-12">
           <FloatingQuoteForm
             defaultService={defaultService}

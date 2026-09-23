@@ -182,10 +182,6 @@ export default function ContactPage() {
       <CtaBanner
         title="Get Your Free Gutter Cleaning Quote Today"
         description="Don't wait for the next storm to find out your gutters are clogged. Reach out today and let Bayview take gutter maintenance off your to-do list for good."
-        primaryText="Request Free Quote"
-        primaryLink="#quote-form"
-        secondaryText="Explore Services"
-        secondaryLink="/gutter-cleaning"
         imageSrc="/images/gutter-cleaning/man-cleaning-gutters-with-vacuum-and-safety-gloves.webp"
       />
     </div>

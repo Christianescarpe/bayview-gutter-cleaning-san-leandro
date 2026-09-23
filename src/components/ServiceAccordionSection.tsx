@@ -18,8 +18,6 @@ export default function ServiceAccordionSection({
   badge = 'East Bay Care',
   title = 'Our Gutter Cleaning Packages & Services',
   description = 'Every service follows our ladder-safe, thorough hand-cleaning and downspout flushing standard. Explore our full range of residential and commercial gutter solutions.',
-  ctaText = 'Book Appointment',
-  ctaLink = '/contact',
 }: ServiceAccordionSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
@@ -57,22 +55,14 @@ export default function ServiceAccordionSection({
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
               {description}
             </p>
-            <div className="flex flex-wrap items-center gap-3">
+            <div>
               <a
                 href={COMPANY_CONFIG.phoneTel}
-                className="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue-hover text-white font-bold text-sm px-6 py-3 rounded-full shadow-lg shadow-brand-blue/25 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                className="inline-flex items-center gap-2.5 bg-brand-blue hover:bg-brand-blue-hover text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-full shadow-lg shadow-brand-blue/25 hover:scale-[1.02] active:scale-[0.98] transition-all"
               >
                 <Phone className="w-4 h-4" />
-                <span>Call {COMPANY_CONFIG.phone}</span>
+                <span>Call to Book: {COMPANY_CONFIG.phone}</span>
               </a>
-
-              <Link
-                href={ctaLink}
-                className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/15 text-white font-semibold text-sm px-5 py-3 rounded-full border border-white/10 transition-all"
-              >
-                <span>{ctaText}</span>
-                <ArrowUpRight className="w-4 h-4" />
-              </Link>
             </div>
           </div>
         </div>
@@ -118,21 +108,21 @@ export default function ServiceAccordionSection({
                     <p>{service.metaDescription}</p>
 
                     <div className="flex flex-wrap items-center gap-4 pt-2">
-                      <Link
-                        href={service.url}
-                        className="inline-flex items-center gap-2 text-brand-blue hover:text-blue-300 font-bold text-sm underline underline-offset-4"
-                      >
-                        <span>View dedicated {service.title} page</span>
-                        <ArrowUpRight className="w-4 h-4" />
-                      </Link>
-
                       <a
                         href={COMPANY_CONFIG.phoneTel}
-                        className="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-brand-blue hover:bg-brand-blue-hover px-4 py-2 rounded-full transition-colors"
+                        className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-white bg-brand-blue hover:bg-brand-blue-hover px-5 py-2.5 rounded-full transition-colors shadow-md"
                       >
                         <Phone className="w-3.5 h-3.5" />
-                        <span>Call for this Service: {COMPANY_CONFIG.phone}</span>
+                        <span>Call to Book This Service: {COMPANY_CONFIG.phone}</span>
                       </a>
+
+                      <Link
+                        href={service.url}
+                        className="inline-flex items-center gap-1.5 text-slate-400 hover:text-white text-xs font-semibold underline underline-offset-4"
+                      >
+                        <span>Learn more about {service.title}</span>
+                        <ArrowUpRight className="w-3.5 h-3.5" />
+                      </Link>
                     </div>
                   </div>
                 )}

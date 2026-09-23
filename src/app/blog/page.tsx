@@ -3,11 +3,12 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { blogPosts } from '@/data/blogContent';
+import { COMPANY_CONFIG } from '@/data/companyConfig';
 import HeroSection from '@/components/HeroSection';
 import TrustBar from '@/components/TrustBar';
 import CtaBanner from '@/components/CtaBanner';
 import { images } from '@/data/imageMap';
-import { ArrowRight, BookOpen, Calendar, Clock } from 'lucide-react';
+import { ArrowRight, BookOpen, Calendar, Clock, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Gutter Cleaning Blog & Homeowner Guides | Bayview San Leandro',
@@ -25,10 +26,6 @@ export default function BlogIndexPage() {
         subheadline="Expert tips, seasonal weather prep, and practical gutter guides designed specifically for homeowners in San Leandro and the surrounding East Bay communities."
         heroImage={images.heroDownspout}
         imageAlt="Bayview Gutter Cleaning San Leandro blog articles"
-        primaryCtaText="Request Free Quote"
-        primaryCtaLink="/contact"
-        secondaryCtaText="Explore Services"
-        secondaryCtaLink="/gutter-cleaning"
         defaultService="Gutter Cleaning"
         defaultLocation="San Leandro"
       />
@@ -98,7 +95,13 @@ export default function BlogIndexPage() {
                     <span className="font-semibold text-brand-blue flex items-center gap-1 group-hover:underline">
                       Read Guide <ArrowRight className="w-3.5 h-3.5 ml-0.5" />
                     </span>
-                    <span>Bayview Gutter Care</span>
+                    <a
+                      href={COMPANY_CONFIG.phoneTel}
+                      className="font-bold text-slate-700 hover:text-brand-blue flex items-center gap-1"
+                    >
+                      <Phone className="w-3 h-3 text-brand-blue" />
+                      <span>Call to Book</span>
+                    </a>
                   </div>
                 </div>
               </article>
@@ -112,10 +115,6 @@ export default function BlogIndexPage() {
       <CtaBanner
         title="Ready to Protect Your Home Before the Rain?"
         description="Schedule a fast, friendly gutter cleaning visit with our insured San Leandro crew."
-        primaryText="Get Free Quote"
-        primaryLink="/contact"
-        secondaryText="Explore Services"
-        secondaryLink="/gutter-cleaning"
         imageSrc="/images/gutter-cleaning/man-cleaning-gutters-with-vacuum-and-safety-gloves.webp"
       />
     </div>

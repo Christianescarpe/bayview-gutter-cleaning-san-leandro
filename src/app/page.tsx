@@ -89,8 +89,6 @@ export default function HomePage() {
         badge="San Leandro & East Bay"
         title="Our Gutter Cleaning Packages & Services"
         description="Every section cleared by hand, every downspout tested, and zero debris left in your yard. Discover our specialized care options below."
-        ctaText="Request Free Estimate"
-        ctaLink="/contact"
       />
 
       {/* 4. PACKAGE COMPARISON CARDS (Light theme with highlighted dark card) */}
@@ -205,10 +203,6 @@ export default function HomePage() {
       <CtaBanner
         title={quoteSection ? quoteSection.title : "Get a Free Gutter Cleaning Quote in San Leandro"}
         description="Ready to stop worrying about your gutters before the next storm rolls in? Reliable, affordable, and always local — that is the Bayview difference."
-        primaryText="Get Your Free Quote"
-        primaryLink="/contact"
-        secondaryText="View Gutter Services"
-        secondaryLink="/gutter-cleaning"
         imageSrc="/images/gutter-cleaning/man-cleaning-gutters-with-vacuum-and-safety-gloves.webp"
       />
     </div>

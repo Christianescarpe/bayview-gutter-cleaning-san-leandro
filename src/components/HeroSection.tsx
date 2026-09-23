@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import FloatingQuoteForm from './FloatingQuoteForm';
 import { COMPANY_CONFIG } from '@/data/companyConfig';
-import { ShieldCheck, Phone, PhoneCall } from 'lucide-react';
+import { ShieldCheck, Phone } from 'lucide-react';
 
 interface HeroSectionProps {
   badgeText?: string;
@@ -84,24 +84,16 @@ export default function HeroSection({
               dangerouslySetInnerHTML={{ __html: subheadline }}
             />
 
-            {/* Action Buttons: Pure Phone CTAs */}
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+            {/* Action Button: Single Phone CTA */}
+            <div className="pt-2">
               <a
                 href={COMPANY_CONFIG.phoneTel}
-                className="inline-flex items-center gap-2.5 bg-brand-blue hover:bg-brand-blue-hover text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-full shadow-lg shadow-brand-blue/35 hover:shadow-brand-blue/50 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                className="inline-flex items-center gap-2.5 bg-brand-blue hover:bg-brand-blue-hover text-white font-bold text-sm sm:text-base px-8 py-4 rounded-full shadow-lg shadow-brand-blue/35 hover:shadow-brand-blue/50 hover:scale-[1.02] active:scale-[0.98] transition-all"
               >
                 <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
                   <Phone className="w-3.5 h-3.5 text-white" />
                 </div>
                 <span>Call {COMPANY_CONFIG.phone}</span>
-              </a>
-
-              <a
-                href={COMPANY_CONFIG.phoneTel}
-                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-sm sm:text-base px-6 py-3.5 rounded-full backdrop-blur-md hover:scale-[1.02] active:scale-[0.98] transition-all"
-              >
-                <PhoneCall className="w-4 h-4 text-blue-300" />
-                <span>Call for Instant Quote</span>
               </a>
             </div>
           </div>
@@ -120,23 +112,14 @@ export default function HeroSection({
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#070C18]/70 via-transparent to-transparent pointer-events-none"></div>
 
-                <div className="absolute bottom-4 left-4 right-4 bg-[#070C18]/90 backdrop-blur-md border border-white/10 rounded-2xl p-3 flex items-center justify-between gap-3">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-brand-blue/20 text-brand-blue flex items-center justify-center shrink-0">
-                      <ShieldCheck className="w-5 h-5" />
-                    </div>
-                    <div className="text-xs">
-                      <div className="font-bold text-white">Insured East Bay Crews</div>
-                      <div className="text-slate-400">Ladder Safety & Debris Haul-Away</div>
-                    </div>
+                <div className="absolute bottom-4 left-4 right-4 bg-[#070C18]/90 backdrop-blur-md border border-white/10 rounded-2xl p-3 flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-brand-blue/20 text-brand-blue flex items-center justify-center shrink-0">
+                    <ShieldCheck className="w-5 h-5" />
                   </div>
-                  <a
-                    href={COMPANY_CONFIG.phoneTel}
-                    className="p-2.5 rounded-xl bg-brand-blue text-white hover:bg-brand-blue-hover transition-colors shrink-0"
-                    title="Call Now"
-                  >
-                    <Phone className="w-4 h-4" />
-                  </a>
+                  <div className="text-xs">
+                    <div className="font-bold text-white">Insured East Bay Crews</div>
+                    <div className="text-slate-400">Ladder Safety & Debris Haul-Away</div>
+                  </div>
                 </div>
               </div>
             </div>

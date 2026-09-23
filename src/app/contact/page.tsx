@@ -64,11 +64,11 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              {/* Prominent Call Box */}
+              {/* Direct Phone Information */}
               <div className="bg-gradient-to-tr from-brand-blue to-blue-600 text-white p-6 rounded-3xl shadow-xl shadow-blue-500/20 space-y-3">
                 <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-100">
                   <PhoneCall className="w-4 h-4" />
-                  <span>Immediate Phone Assistance</span>
+                  <span>Direct Customer Support</span>
                 </div>
                 <div className="text-2xl sm:text-3xl font-black">
                   {COMPANY_CONFIG.phone}
@@ -76,15 +76,6 @@ export default function ContactPage() {
                 <p className="text-xs text-blue-100 leading-relaxed">
                   Call or text our San Leandro office during business hours for same-week scheduling or pre-storm overflow assistance.
                 </p>
-                <div className="pt-2">
-                  <a
-                    href={COMPANY_CONFIG.phoneTel}
-                    className="inline-flex items-center gap-2 bg-white text-brand-blue hover:bg-slate-100 font-bold text-sm px-5 py-2.5 rounded-full transition-all shadow-md"
-                  >
-                    <Phone className="w-4 h-4" />
-                    <span>Call Us Now</span>
-                  </a>
-                </div>
               </div>
 
               {/* Contact Cards */}

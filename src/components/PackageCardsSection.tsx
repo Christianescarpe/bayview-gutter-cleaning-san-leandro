@@ -85,13 +85,10 @@ export default function PackageCardsSection({
           </p>
 
           <div className="pt-2">
-            <a
-              href={COMPANY_CONFIG.phoneTel}
-              className="inline-flex items-center gap-2 bg-blue-50 hover:bg-blue-100 text-brand-blue border border-blue-200 px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-colors shadow-sm"
-            >
-              <Phone className="w-4 h-4 text-brand-blue" />
-              <span>Questions about packages? Call our crew at {COMPANY_CONFIG.phone}</span>
-            </a>
+            <div className="inline-flex items-center gap-2 bg-blue-50 text-brand-blue border border-blue-200/80 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold">
+              <Phone className="w-3.5 h-3.5 text-brand-blue" />
+              <span>Need help picking? Call: {COMPANY_CONFIG.phone}</span>
+            </div>
           </div>
         </div>
 

@@ -48,21 +48,13 @@ export default function CtaBanner({
                 {description}
               </p>
 
-              <div className="flex flex-wrap items-center gap-4 pt-2">
+              <div className="pt-2">
                 <a
                   href={COMPANY_CONFIG.phoneTel}
                   className="inline-flex items-center gap-2.5 bg-white hover:bg-slate-100 text-brand-blue font-black px-8 py-4 rounded-full shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all text-base"
                 >
                   <PhoneCall className="w-5 h-5 text-brand-blue" />
                   <span>Call {COMPANY_CONFIG.phone}</span>
-                </a>
-
-                <a
-                  href={COMPANY_CONFIG.phoneTel}
-                  className="inline-flex items-center gap-2 bg-blue-700/60 hover:bg-blue-700 text-white font-semibold px-6 py-4 rounded-full border border-white/20 backdrop-blur-sm hover:scale-[1.02] active:scale-[0.98] transition-all text-sm"
-                >
-                  <Phone className="w-4 h-4" />
-                  <span>Call for Instant Quote</span>
                 </a>
               </div>
             </div>

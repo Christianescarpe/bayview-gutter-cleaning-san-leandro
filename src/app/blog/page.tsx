@@ -11,7 +11,7 @@ import { images } from '@/data/imageMap';
 import { ArrowRight, BookOpen, Calendar, Clock, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Gutter Cleaning Blog & Homeowner Guides | Bayview San Leandro',
+  title: 'Gutter Cleaning Blog & Homeowner Guides',
   description: 'Expert gutter maintenance guides, storm prep checklists, and advice for San Leandro and East Bay homeowners from Bayview Gutter Cleaning.',
 };
 

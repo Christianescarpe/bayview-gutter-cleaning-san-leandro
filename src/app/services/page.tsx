@@ -13,7 +13,7 @@ import { images } from '@/data/imageMap';
 import { ArrowRight, CheckCircle2, Droplets, ShieldCheck, Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Gutter Cleaning & Repair Services San Leandro CA | Bayview',
+  title: 'Gutter Cleaning & Repair Services San Leandro CA',
   description: 'Complete gutter care services in San Leandro and the East Bay. Gutter cleaning, downspout snaking, gutter guards, repairs, and commercial maintenance.',
 };
 

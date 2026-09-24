@@ -19,7 +19,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     "title": "Gutter Cleaning Frequency Guide",
-    "seoTitle": "How Often Should You Clean Gutters in San Leandro CA? | Bayview",
+    "seoTitle": "How Often Should You Clean Gutters in San Leandro CA?",
     "metaDescription": "Discover how often San Leandro homeowners should clean their gutters. Learn seasonal schedules and tips. Call Bayview today at +15107563191.",
     "url": "/blog/how-often-should-you-clean-gutters-san-leandro",
     "slug": "how-often-should-you-clean-gutters-san-leandro",
@@ -75,7 +75,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     "title": "Warning Signs of Clogged Gutters",
-    "seoTitle": "7 Signs Your Gutters Are Clogged | Bayview Gutter Cleaning San Leandro",
+    "seoTitle": "7 Signs Your Gutters Are Clogged",
     "metaDescription": "Learn the top 7 warning signs of clogged gutters before water damages your home. Fast local gutter cleaning in San Leandro CA. Call +15107563191.",
     "url": "/blog/signs-gutters-are-clogged-san-leandro",
     "slug": "signs-gutters-are-clogged-san-leandro",
@@ -140,7 +140,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     "title": "East Bay Fall Storm Prep Guide",
-    "seoTitle": "Fall Gutter Cleaning & Storm Prep in San Leandro CA | Bayview",
+    "seoTitle": "Fall Gutter Cleaning & Storm Prep in San Leandro CA",
     "metaDescription": "Prepare your San Leandro home for winter storms and atmospheric rivers. Essential fall gutter prep checklist. Call Bayview at +15107563191.",
     "url": "/blog/fall-gutter-cleaning-storm-prep-san-leandro",
     "slug": "fall-gutter-cleaning-storm-prep-san-leandro",
@@ -192,7 +192,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     "title": "Gutter Guards vs Manual Cleaning Guide",
-    "seoTitle": "Gutter Guards vs. Manual Cleaning: What's Best for San Leandro? | Bayview",
+    "seoTitle": "Gutter Guards vs. Manual Cleaning: What's Best for San Leandro?",
     "metaDescription": "Compare micro-mesh gutter guards and manual gutter cleaning for San Leandro homes. Learn pros, cons, and costs. Call Bayview at +15107563191.",
     "url": "/blog/gutter-guards-vs-manual-cleaning-san-leandro",
     "slug": "gutter-guards-vs-manual-cleaning-san-leandro",
@@ -251,7 +251,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     "title": "Pine Needles & Eucalyptus Gutter Solutions",
-    "seoTitle": "Dealing with Pine Needles & Eucalyptus in San Leandro Gutters | Bayview",
+    "seoTitle": "Dealing with Pine Needles & Eucalyptus in San Leandro Gutters",
     "metaDescription": "How to manage heavy eucalyptus bark and pine needles in San Leandro gutters. Practical debris removal solutions. Call Bayview at +15107563191.",
     "url": "/blog/pine-needles-eucalyptus-gutter-debris-san-leandro",
     "slug": "pine-needles-eucalyptus-gutter-debris-san-leandro",
@@ -313,7 +313,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     "title": "Downspout Maintenance Guide",
-    "seoTitle": "Complete Downspout Maintenance Guide for San Leandro CA | Bayview",
+    "seoTitle": "Complete Downspout Maintenance Guide for San Leandro CA",
     "metaDescription": "Master downspout maintenance in San Leandro CA. Learn how to snake, flush, and inspect downspouts to prevent leaks. Call Bayview at +15107563191.",
     "url": "/blog/downspout-maintenance-guide-san-leandro",
     "slug": "downspout-maintenance-guide-san-leandro",
@@ -376,7 +376,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     "title": "Foundation Water Damage Prevention",
-    "seoTitle": "How Clean Gutters Prevent Foundation Damage | Bayview San Leandro",
+    "seoTitle": "How Clean Gutters Prevent Foundation Damage",
     "metaDescription": "Prevent catastrophic foundation cracks and soil settlement in San Leandro with clean gutters. Call Bayview at +15107563191 for drainage care.",
     "url": "/blog/how-clean-gutters-prevent-foundation-damage",
     "slug": "how-clean-gutters-prevent-foundation-damage",
@@ -434,7 +434,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     "title": "Roof Valley & Moss Clearing Guide",
-    "seoTitle": "Roof Valley Moss & Debris Clearing San Leandro CA | Bayview",
+    "seoTitle": "Roof Valley Moss & Debris Clearing San Leandro CA",
     "metaDescription": "Protect your roof shingles and gutters from moss and valley debris in San Leandro CA. Gentle roofline cleaning. Call Bayview at +15107563191.",
     "url": "/blog/roof-valley-debris-moss-clearing-san-leandro",
     "slug": "roof-valley-debris-moss-clearing-san-leandro",
@@ -497,7 +497,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     "title": "East Bay Gutter Cleaning Cost Guide",
-    "seoTitle": "How Much Does Gutter Cleaning Cost in San Leandro CA? | Bayview",
+    "seoTitle": "How Much Does Gutter Cleaning Cost in San Leandro CA?",
     "metaDescription": "Comprehensive 2026 gutter cleaning cost guide for San Leandro and East Bay homes. Pricing factors, estimates, and tips. Call Bayview at +15107563191.",
     "url": "/blog/gutter-cleaning-cost-guide-san-leandro",
     "slug": "gutter-cleaning-cost-guide-san-leandro",
@@ -552,7 +552,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     "title": "Gutter Cleaning Ladder Safety Guide",
-    "seoTitle": "Ladder Safety & DIY Gutter Cleaning Risks in San Leandro | Bayview",
+    "seoTitle": "Ladder Safety & DIY Gutter Cleaning Risks in San Leandro",
     "metaDescription": "The hidden dangers of DIY gutter cleaning and essential ladder safety practices. Stay safe and call Bayview at +15107563191 for insured service.",
     "url": "/blog/gutter-cleaning-ladder-safety-diy-risks",
     "slug": "gutter-cleaning-ladder-safety-diy-risks",

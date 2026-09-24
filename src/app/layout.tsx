@@ -7,8 +7,8 @@ import MobileCallBar from '@/components/MobileCallBar';
 export const metadata: Metadata = {
   metadataBase: new URL('https://bayviewguttercleaningsanleandro.com'),
   title: {
-    default: 'Bayview Gutter Cleaning San Leandro | Local East Bay Gutter Care',
-    template: '%s | Bayview Gutter Cleaning San Leandro',
+    default: 'Bayview Gutter Cleaning San Leandro',
+    template: '%s',
   },
   description: 'Trusted gutter cleaning San Leandro CA homeowners rely on. Free quotes, insured local crews, and same-week scheduling. Call +1 (510) 756-3191.',
   keywords: [

@@ -24,7 +24,7 @@ export interface SitePage {
 export const sitePages: SitePage[] = [
   {
     "title": "Home",
-    "seoTitle": "Gutter Cleaning San Leandro CA | Bayview Gutter Cleaning San Leandro",
+    "seoTitle": "Gutter Cleaning San Leandro CA",
     "metaDescription": "Trusted gutter cleaning San Leandro CA homeowners rely on. Free quotes, insured local crews, and same-week scheduling. Call Bayview Gutter Cleaning San Leandro today.",
     "url": "/",
     "slug": "",
@@ -85,7 +85,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Gutter Cleaning",
-    "seoTitle": "Professional Gutter Cleaning San Leandro CA | Bayview Gutter Cleaning",
+    "seoTitle": "Professional Gutter Cleaning San Leandro CA",
     "metaDescription": "Expert gutter cleaning in San Leandro CA. Reliable debris removal, ladder safety, free estimates, and fast scheduling. Call Bayview at +15107563191.",
     "url": "/gutter-cleaning",
     "slug": "gutter-cleaning",
@@ -141,7 +141,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Downspout Cleaning",
-    "seoTitle": "Downspout Cleaning San Leandro CA | Unclog Downspouts | Bayview",
+    "seoTitle": "Downspout Cleaning San Leandro CA",
     "metaDescription": "Clear stubborn downspout clogs in San Leandro CA with professional snaking and flushing. Protect your foundation. Call Bayview today at +15107563191.",
     "url": "/downspout-cleaning",
     "slug": "downspout-cleaning",
@@ -206,7 +206,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Gutter & Downspout Cleaning",
-    "seoTitle": "Complete Gutter & Downspout Cleaning San Leandro CA | Bayview",
+    "seoTitle": "Complete Gutter & Downspout Cleaning San Leandro CA",
     "metaDescription": "Comprehensive gutter and downspout cleaning in San Leandro CA. Full system hand-clearing and high-flow flushing. Call Bayview at +15107563191 for a free quote.",
     "url": "/gutter-and-downspout-cleaning",
     "slug": "gutter-and-downspout-cleaning",
@@ -268,7 +268,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Clogged Gutter Cleaning",
-    "seoTitle": "Clogged Gutter Cleaning San Leandro CA | Rapid Unclogging | Bayview",
+    "seoTitle": "Clogged Gutter Cleaning San Leandro CA",
     "metaDescription": "Fast relief for overflowing and clogged gutters in San Leandro CA. Prevent water damage to fascia and foundation. Call Bayview at +15107563191.",
     "url": "/clogged-gutter-cleaning",
     "slug": "clogged-gutter-cleaning",
@@ -335,7 +335,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Gutter Debris Removal",
-    "seoTitle": "Gutter Debris Removal San Leandro CA | Clear Leaves & Dirt | Bayview",
+    "seoTitle": "Gutter Debris Removal San Leandro CA",
     "metaDescription": "Professional gutter debris removal in San Leandro CA. Hand removal of pine needles, leaves, and roof grit. Call Bayview at +15107563191 for clean gutters.",
     "url": "/gutter-debris-removal",
     "slug": "gutter-debris-removal",
@@ -395,7 +395,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Gutter Maintenance",
-    "seoTitle": "Gutter Maintenance San Leandro CA | Seasonal Care Plans | Bayview",
+    "seoTitle": "Gutter Maintenance San Leandro CA",
     "metaDescription": "Keep your gutters running perfectly year-round with seasonal gutter maintenance in San Leandro CA. Priority scheduling and discounts. Call +15107563191.",
     "url": "/gutter-maintenance",
     "slug": "gutter-maintenance",
@@ -456,7 +456,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Gutter Inspection",
-    "seoTitle": "Gutter Inspection San Leandro CA | Professional Assessment | Bayview",
+    "seoTitle": "Gutter Inspection San Leandro CA",
     "metaDescription": "Complete gutter inspection in San Leandro CA. Identify leaks, pitch issues, and seam separation before storms. Call Bayview at +15107563191.",
     "url": "/gutter-inspection",
     "slug": "gutter-inspection",
@@ -517,7 +517,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Gutter Repair",
-    "seoTitle": "Gutter Repair San Leandro CA | Fix Leaks, Sagging & Seams | Bayview",
+    "seoTitle": "Gutter Repair San Leandro CA",
     "metaDescription": "Reliable gutter repair in San Leandro CA. We fix leaking corners, detached brackets, sagging troughs, and loose downspouts. Call Bayview at +15107563191.",
     "url": "/gutter-repair",
     "slug": "gutter-repair",
@@ -579,7 +579,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Gutter Guard Installation",
-    "seoTitle": "Gutter Guard Installation San Leandro CA | Leaf Protection | Bayview",
+    "seoTitle": "Gutter Guard Installation San Leandro CA",
     "metaDescription": "Top-rated gutter guard installation in San Leandro CA. Keep out pine needles, leaves, and debris with premium mesh guards. Call +15107563191.",
     "url": "/gutter-guard-installation",
     "slug": "gutter-guard-installation",
@@ -643,7 +643,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Gutter Guard Cleaning",
-    "seoTitle": "Gutter Guard Cleaning San Leandro CA | Screen Care | Bayview",
+    "seoTitle": "Gutter Guard Cleaning San Leandro CA",
     "metaDescription": "Expert gutter guard cleaning in San Leandro CA. We clear mesh, remove fine silt, and restore water intake flow. Call Bayview today at +15107563191.",
     "url": "/gutter-guard-cleaning",
     "slug": "gutter-guard-cleaning",
@@ -703,7 +703,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Commercial Gutter Cleaning",
-    "seoTitle": "Commercial Gutter Cleaning San Leandro CA | Property Care | Bayview",
+    "seoTitle": "Commercial Gutter Cleaning San Leandro CA",
     "metaDescription": "Reliable commercial gutter cleaning in San Leandro CA. Apartment complexes, retail, offices & warehouses. Fully insured. Call Bayview at +15107563191.",
     "url": "/commercial-gutter-cleaning",
     "slug": "commercial-gutter-cleaning",
@@ -763,7 +763,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Residential Gutter Cleaning",
-    "seoTitle": "Residential Gutter Cleaning San Leandro CA | Home Care | Bayview",
+    "seoTitle": "Residential Gutter Cleaning San Leandro CA",
     "metaDescription": "Dedicated residential gutter cleaning in San Leandro CA. Careful hand cleaning, ladder safety, and ground cleanup. Call Bayview at +15107563191.",
     "url": "/residential-gutter-cleaning",
     "slug": "residential-gutter-cleaning",
@@ -824,7 +824,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Roof & Gutter Cleaning",
-    "seoTitle": "Roof & Gutter Cleaning San Leandro CA | Moss & Debris | Bayview",
+    "seoTitle": "Roof & Gutter Cleaning San Leandro CA",
     "metaDescription": "Combined roof and gutter cleaning in San Leandro CA. Clear roof valleys, remove moss, and flush downspouts safely. Call Bayview at +15107563191.",
     "url": "/roof-and-gutter-cleaning",
     "slug": "roof-and-gutter-cleaning",
@@ -885,7 +885,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Emergency Gutter Cleaning",
-    "seoTitle": "Emergency Gutter Cleaning San Leandro CA | Fast Response | Bayview",
+    "seoTitle": "Emergency Gutter Cleaning San Leandro CA",
     "metaDescription": "Fast emergency gutter cleaning in San Leandro CA. Immediate help for overflowing gutters, detached downspouts, and storm clogs. Call +15107563191.",
     "url": "/emergency-gutter-cleaning",
     "slug": "emergency-gutter-cleaning",
@@ -946,7 +946,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "FAQ",
-    "seoTitle": "Gutter Cleaning FAQ San Leandro CA | Bayview Gutter Cleaning San Leandro",
+    "seoTitle": "Gutter Cleaning FAQ San Leandro CA",
     "metaDescription": "Answers to the most common questions about gutter cleaning San Leandro homeowners ask: cost, frequency, warning signs, and repair vs. replacement.",
     "url": "/faq",
     "slug": "faq",
@@ -1031,7 +1031,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Location (Areas We Serve)",
-    "seoTitle": "Areas We Serve | Gutter Cleaning Near San Leandro, CA",
+    "seoTitle": "Areas We Serve",
     "metaDescription": "Bayview Gutter Cleaning San Leandro serves San Leandro, San Lorenzo, Oakland, Hayward, Castro Valley, Alameda, Union City, Fremont, and Newark.",
     "url": "/areas-we-serve",
     "slug": "areas-we-serve",
@@ -1128,7 +1128,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Contact",
-    "seoTitle": "Contact Us | Free Gutter Cleaning Quote San Leandro, CA",
+    "seoTitle": "Contact Us",
     "metaDescription": "Get a free gutter cleaning quote in San Leandro, CA. Fast response, transparent pricing, and same-week scheduling from Bayview Gutter Cleaning San Leandro.",
     "url": "/contact",
     "slug": "contact",
@@ -1217,7 +1217,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "San Lorenzo",
-    "seoTitle": "Gutter Cleaning San Lorenzo CA | Bayview Gutter Cleaning",
+    "seoTitle": "Gutter Cleaning San Lorenzo CA",
     "metaDescription": "Reliable gutter cleaning in San Lorenzo CA. Hand debris removal, downspout clearing, and free quotes. Call Bayview Gutter Cleaning at +15107563191.",
     "url": "/san-lorenzo",
     "slug": "san-lorenzo",
@@ -1278,7 +1278,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Castro Valley",
-    "seoTitle": "Gutter Cleaning Castro Valley CA | Bayview Gutter Cleaning",
+    "seoTitle": "Gutter Cleaning Castro Valley CA",
     "metaDescription": "Expert gutter cleaning in Castro Valley CA. Hillside rooflines, pine needle clearing, downspout snaking, and free quotes. Call Bayview at +15107563191.",
     "url": "/castro-valley",
     "slug": "castro-valley",
@@ -1335,7 +1335,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Oakland",
-    "seoTitle": "Gutter Cleaning Oakland CA | Bayview Gutter Cleaning",
+    "seoTitle": "Gutter Cleaning Oakland CA",
     "metaDescription": "Reliable gutter cleaning in Oakland CA. Serving Rockridge, Montclair, Grand Lake & beyond. Downspout flushing & free estimates. Call +15107563191.",
     "url": "/oakland",
     "slug": "oakland",
@@ -1393,7 +1393,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Hayward",
-    "seoTitle": "Gutter Cleaning Hayward CA | Reliable Gutter Care | Bayview",
+    "seoTitle": "Gutter Cleaning Hayward CA",
     "metaDescription": "Professional gutter cleaning in Hayward CA. Fast unclogging, downspout snaking, and roof valley clearing. Call +15107563191 for a free estimate today.",
     "url": "/hayward",
     "slug": "hayward",
@@ -1451,7 +1451,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Alameda",
-    "seoTitle": "Gutter Cleaning Alameda CA | Island Gutter Care | Bayview",
+    "seoTitle": "Gutter Cleaning Alameda CA",
     "metaDescription": "Trusted gutter cleaning in Alameda CA. Historic Victorian care, downspout flushing, debris clearing & free estimates. Call Bayview today at +15107563191.",
     "url": "/alameda",
     "slug": "alameda",
@@ -1508,7 +1508,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Union City",
-    "seoTitle": "Gutter Cleaning Union City CA | Bayview Gutter Cleaning",
+    "seoTitle": "Gutter Cleaning Union City CA",
     "metaDescription": "Expert gutter cleaning in Union City CA. Downspout snaking, debris clearing, and ladder-safe roofline care. Call Bayview at +15107563191 for a free quote.",
     "url": "/union-city",
     "slug": "union-city",
@@ -1566,7 +1566,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Fremont",
-    "seoTitle": "Gutter Cleaning Fremont CA | Residential & Commercial | Bayview",
+    "seoTitle": "Gutter Cleaning Fremont CA",
     "metaDescription": "Premier gutter cleaning in Fremont CA. Mission San Jose, Niles, Centerville & Ardenwood. Downspout flushing & free quotes. Call Bayview at +15107563191.",
     "url": "/fremont",
     "slug": "fremont",
@@ -1624,7 +1624,7 @@ export const sitePages: SitePage[] = [
   },
   {
     "title": "Newark",
-    "seoTitle": "Gutter Cleaning Newark CA | Local Drainage Experts | Bayview",
+    "seoTitle": "Gutter Cleaning Newark CA",
     "metaDescription": "Dependable gutter cleaning in Newark CA. Thorough downspout flushing, hand debris removal, and free quotes. Call Bayview today at +15107563191.",
     "url": "/newark",
     "slug": "newark",

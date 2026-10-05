@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import MobileCallBar from '@/components/MobileCallBar';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://bayviewguttercleaningsanleandro.com'),
+  metadataBase: new URL('https://guttercleaningsanleandro.site'),
   title: {
     default: 'Bayview Gutter Cleaning San Leandro',
     template: '%s',
